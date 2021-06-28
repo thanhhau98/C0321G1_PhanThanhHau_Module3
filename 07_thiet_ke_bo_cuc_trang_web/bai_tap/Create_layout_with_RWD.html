@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+
+
+        .header {
+            color: white;
+            padding: 15px;
+            overflow: hidden;
+
+            top: 0;
+            width: 100%;
+            background-color: black;
+        }
+        .header  a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .footer {
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            background-color: #333333;
+        }
+
+        .left-panel ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-panel ul li {
+            color: blue;
+            margin-bottom: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .left-panel ul li:hover {
+            background-color: red;
+        }
+
+
+        .right-panel ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .right-panel ul li {
+            background-color: #bbbbbb;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        .right-panel ul li:hover {
+            background-color: red;
+        }
+
+        /*<= 768*/
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+        #right {
+            float: right;
+            padding: 14px 30px;
+        }
+
+        article {
+            margin: 5px;
+            padding: 10px;
+            background-color: white;
+            border-bottom: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="col-12">
+        <div class="header">
+            <a>Logo</a>
+            <a>Home</a>
+            <a>About</a>
+            <a>Projects</a>
+            <a>Contact</a>
+            <a id="right">Login</a>
+        </div>
+    </div>
+</div>
+<div class="row ">
+    <div class="col-3" >
+        <div class="left-panel">
+            <ul>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="center-panel">
+            <section>
+                <article>
+                    <h2>Welcome</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                </article>
+                <article>
+                    <h2>Test</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                </article>
+            </section>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="right-panel">
+            <ul>
+                <li>ADS</li>
+                <li>ADS</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="footer">
+            <p>Resize the browser window to see how the content respond to the resizing.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="Basic_layout.css">
+    <style>
+        section {
+            margin: 5px;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        article {
+            margin: 5px;
+            padding: 10px;
+            background-color: white;
+        }
+
+
+        body{
+        font-family: Arial;
+        }
+        #menu, #menu1, #menu ul, #menu li{
+            padding:0;
+            margin:0;
+        }
+
+        #menu li{
+            list-style: none;
+            position: relative;
+            width:100px;
+            height: 30px;
+            padding:0 20px;
+            line-height: 30px;
+            cursor:pointer;
+        }
+        #menu li a{
+            text-decoration:none;
+            color: white;
+        }
+
+        #menu li:hover{
+            background-color:red;
+        }
+
+        #menu1 li{
+            background-color: #3e8e41;
+            list-style: none;
+            position: relative;
+            width:150px;
+            height: 30px;
+            padding:0 20px;
+            line-height: 30px;
+            cursor:pointer;
+        }
+        #menu1 li a{
+            text-decoration:none;
+            color: white;
+        }
+
+        #menu1 li:hover{
+            background-color:red;
+        }
+
+        nav {
+            background-color: blue;
+            top: 0;
+            overflow:hidden ;
+            position: fixed;
+            width: 100%;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="main">
+    <div id="head">
+        <nav>
+            <a>Trang chủ</a>
+            <a>Tìm </a>
+            <a>Tin mới</a>
+            <a>Xem</a></li>
+            <a>Cửa hàng</a>
+            <a>Nhóm</a>
+            <a>Trò chơi</a>
+            <a>Trang cá nhân</a>
+            <a>Khác</a>
+        </nav>
+    </div>
+    <div id="left">
+        <div id="menu">
+            <ul>
+                <li><a href="#">Trang cá nhân</a></li>
+                <li><a href="#">Bạn bè</a></li>
+                <li><a href="#">Gần đây nhất</a></li>
+                <li><a href="#">Yêu thích</a></li>
+                <li><a href="#">Đã lưu</a></li>
+                <li><a href="#">Nhóm</a></li>
+                <li><a href="#">Cửa hàng</a></li>
+                <li><a href="#">Xem</a></li>
+                <li><a href="#">Sự kiện</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <section>
+            <article>
+                <h2>Story</h2>
+            </article>
+            <article>
+                <h2>cập nhật trạng thái </h2>
+            </article>
+            <article>
+                <h2>Tạo phòng họp mặt </h2>
+            </article>
+            <article>
+                <h2>News </h2>
+            </article>
+            <article>
+                <h2>News </h2>
+            </article>
+            <article>
+                <h2>News </h2>
+            </article>
+        </section>
+    </div>
+    <div id="right">
+        <div id="menu1">
+            <ul>
+                <li><a href="#">Quảng cáo</a></li>
+                <li><a href="#">Thông báo</a></li>
+                <li><a href="#">Danh sách bạn bè</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
